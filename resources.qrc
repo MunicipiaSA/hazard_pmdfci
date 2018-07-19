@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/Perigosidade_PMDFCI" >
+        <file>icons/pmdfci.png</file>
+    </qresource>
+</RCC>

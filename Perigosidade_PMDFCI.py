@@ -373,7 +373,7 @@ class Perigosidade_PMDFCI:
 
 				Probabilidade.startEditing()	
 				for Valores in processing.features(Probabilidade):
-					if (Valores[CampoProbIndex] == 0) or (Valores[CampoProbIndex] == (1.0/float(NrCampos)*100)):
+					if (Valores[CampoProbIndex] == 0) or (Valores[CampoProbIndex] <= ((1.0/float(NrCampos)*100)+0.000000000005)):
 						Probabilidade.changeAttributeValue(Valores.id(), CampoProbIndex, float(1))
 				Probabilidade.commitChanges()
 				Probabilidade.updateFields()
